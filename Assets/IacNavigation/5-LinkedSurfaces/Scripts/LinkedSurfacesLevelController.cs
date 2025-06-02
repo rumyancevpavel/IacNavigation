@@ -23,7 +23,7 @@ namespace IacNavigation._5_LinkedSurfaces.Scripts
 				var ray = _rayCastCamera.ScreenPointToRay(Input.mousePosition);
 				if (Physics.Raycast(ray, out RaycastHit hit))
 				{
-					//if(CanAgentReactDestination(_agent, hit.point))
+					if(CanAgentReactDestination(_agent, hit.point))
 					{
 						_agent.destination = hit.point;
 					}

@@ -27,8 +27,6 @@ namespace IacNavigation._4_DynamicSurface.Scripts
 		{
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
-				var isOpen = _doorAnimator.GetBool(IS_OPENE_ANIMATION_PARAM_NAME);
-				SetDoorOpened(!isOpen);
 			}
 
 			if (Input.GetMouseButtonDown(0))
@@ -36,22 +34,8 @@ namespace IacNavigation._4_DynamicSurface.Scripts
 				var ray = _rayCastCamera.ScreenPointToRay(Input.mousePosition);
 				if (Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit))
 				{
-					if(CanAgentReactDestination(_agent, hit.point))
-					{
-						_agent.destination = hit.point;
-					}
 				}
 			}
-		}
-
-		private bool CanAgentReactDestination(NavMeshAgent agent, Vector3 destination)
-		{
-			var path = new NavMeshPath();
-			if (agent.CalculatePath(destination, path))
-			{
-				return path.status == NavMeshPathStatus.PathComplete;
-			}
-			return false;
 		}
 
 		private void SetDoorOpened(bool isOpen)

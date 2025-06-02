@@ -29,20 +29,6 @@ namespace IacNavigation.Character.Scripts
 
 		private void Update()
 		{
-			_animator.SetBool(RUNNING_PARAM_NAME, IsMoving());
-		}
-
-		private bool IsMoving()
-		{
-			return _agent.velocity.magnitude > 0.1f;
-		}
-
-		private void OnAnimatorMove()
-		{
-			if (_animator.GetBool(RUNNING_PARAM_NAME))
-			{
-				_agent.speed = (_animator.deltaPosition / Time.deltaTime).magnitude;
-			}
 		}
 
 		#endregion

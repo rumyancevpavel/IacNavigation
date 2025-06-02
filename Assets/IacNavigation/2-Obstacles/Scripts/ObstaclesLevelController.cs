@@ -24,12 +24,6 @@ namespace IacNavigation.Obstacles
 			var bigInput = Input.GetMouseButtonDown(1);
 			if (smallInput || bigInput)
 			{
-				var ray = _rayCastCamera.ScreenPointToRay(Input.mousePosition);
-				if (Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit))
-				{
-					var agent = smallInput ? _smallAgent : _bigAgent;
-					agent.SetDestination(hit.point);
-				}
 			}
 		}
 

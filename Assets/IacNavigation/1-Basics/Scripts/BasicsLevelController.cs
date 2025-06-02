@@ -19,11 +19,6 @@ namespace IacNavigation.Basics
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
-				var ray = _rayCastCamera.ScreenPointToRay(Input.mousePosition);
-				if (Physics.Raycast(ray.origin, ray.direction, out var hit))
-				{
-					_targetAgent.SetDestination(hit.point);
-				}
 			}
 		}
 

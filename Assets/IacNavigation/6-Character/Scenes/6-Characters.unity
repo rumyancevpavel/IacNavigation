@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3235965575132470314, guid: 246600b8349a04b47bf9a3c9564e76cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.093
       objectReference: {fileID: 0}
     - target: {fileID: 3235965575132470314, guid: 246600b8349a04b47bf9a3c9564e76cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -185,6 +185,10 @@ PrefabInstance:
     - target: {fileID: 8382741009387682722, guid: 246600b8349a04b47bf9a3c9564e76cb, type: 3}
       propertyPath: m_Speed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382741009387682722, guid: 246600b8349a04b47bf9a3c9564e76cb, type: 3}
+      propertyPath: m_AgentTypeID
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8382741009387682722, guid: 246600b8349a04b47bf9a3c9564e76cb, type: 3}
       propertyPath: m_AngularSpeed
@@ -229,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedVersion: 0
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: 0
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
