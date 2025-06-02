@@ -9,7 +9,7 @@ namespace IacNavigation.Character.Scripts
 		
 		[SerializeField] private Camera _rayCastCamera;
 		
-		[SerializeField] private EllenBehaviour _ellen;
+		[SerializeField] private EllenBasicBehaviour _ellen;
 		
 		#endregion
 

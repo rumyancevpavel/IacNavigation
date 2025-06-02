@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace IacNavigation.Character.Scripts
 {
-	public class EllenBehaviour : MonoBehaviour
+	public class EllenBasicBehaviour : MonoBehaviour
 	{
 		#region Consts
 		
